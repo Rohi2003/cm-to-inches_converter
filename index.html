@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM to Inches Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <h1>CM to Inches Converter</h1>
+    <div id="box">
+        <input type="text" id="cm" placeholder="Enter the cm">
+    </div>
+    <div id="convert">
+        <button type="submit" onclick="convert()"> Convert to inches</button>
+    </div>
+    <div id="result">
+
+    </div>
+
+    </div>
+    <script>
+        function convert(){
+            let cmVal = Number(document.getElementById("cm").value)
+        let inchVal = cmVal/2.54
+        let result = document.getElementById("result")
+        result.innerHTML = inchVal.toFixed(2)
+        }
+    </script>
+</body>
+</html>
