@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-     <h1>CM to Inches Converter</h1>
+<div class="container">
+    <h1>CM to Inches Converter</h1>
     <div id="box">
         <input type="text" id="cm" placeholder="Enter the cm">
     </div>
@@ -16,17 +16,16 @@
         <button type="submit" onclick="convert()"> Convert to inches</button>
     </div>
     <div id="result">
-
     </div>
-
-    </div>
+</div>
     <script>
         function convert(){
             let cmVal = Number(document.getElementById("cm").value)
         let inchVal = cmVal/2.54
         let result = document.getElementById("result")
-        result.innerHTML = inchVal.toFixed(2)
+        result.innerHTML = inchVal.toFixed(2) + "inches"
         }
     </script>
 </body>
+
 </html>
